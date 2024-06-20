@@ -165,10 +165,10 @@ function Rest(N){
             console.log('Buzz');
         }
         else{
-            console.log('Niente');
+            console.log(i);
         }
-        console.log(i);
     }
 }
 
 Rest(100);
+
