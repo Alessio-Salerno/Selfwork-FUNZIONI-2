@@ -153,22 +153,73 @@ tutti i numeri multipli di 5 siano sostituiti dalla stringa 'Buzz'
 e tutti i numeri multipli di 15 siano sostituiti dalla stringa 'fizzBuzz'
 */
 
-function Rest(N){
-    for(let i = 1; i <= N; i++){
-        if(i % 15 === 0){
-            console.log('fizzBuzz');
-        }
-        else if(i % 3 === 0){
-        console.log('Fizz');
-        }
-        else if(i % 5 === 0){
-            console.log('Buzz');
-        }
-        else{
-            console.log(i);
-        }
-    }
-}
+// function Rest(N){
+//     for(let i = 1; i <= N; i++){
+//         if(i % 15 === 0){
+//             console.log('fizzBuzz');
+//         }
+//         else if(i % 3 === 0){
+//         console.log('Fizz');
+//         }
+//         else if(i % 5 === 0){
+//             console.log('Buzz');
+//         }
+//         else{
+//             console.log(i);
+//         }
+//     }
+// }
 
-Rest(100);
+// Rest(100);
+
+
+
+// -------------------------------\\
+/*
+Scrivi una funzione che dato un numero intero positivo (massimo 9999) conti da quante cifre è formato.
+
+Esempio:
+Input : 9 → output: 1 cifra
+Input : 99 → output: 2 cifre
+Input: 12000 → output: Numero troppo grande
+*/
+
+
+function contaCifre(numeri){
+    // INSERIRE UNA CONDIZIONE PER CAPIRE SE IL NUMERO È POSITIVO O NEGATIVO
+    // IN QUESTO CASO L'OUTPUT TORNA POSITIVO
+    if(numeri > 999){
+        return "Numero positivo";
+    }
+    // QUI L'OUTPUT TORNA NEGATIVO 
+     if(numeri < 0){
+        return "Numero negativo";
+    }
+    
+       return `Il numero ${numeri} è formato da cifre = ${numeri.toString().length} ` 
+    }
+
+    console.log(contaCifre(9));
+    console.log(contaCifre(200));
+    console.log(contaCifre(18));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
